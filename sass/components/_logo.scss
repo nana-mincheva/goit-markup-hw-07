@@ -1,0 +1,29 @@
+.logo {
+  color: $logo-color;
+  font-family: $accent-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.web-logo {
+  color: $accent-color;
+}
+
+.footer-logo {
+  color: $white-color;
+  font-family: $accent-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.footer-logo > .link {
+  margin-bottom: 20px;
+}
+
+.footer-logo .web-logo {
+  color: $accent-color;
+}
