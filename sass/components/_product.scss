@@ -1,19 +1,27 @@
-.work-list {
+.product {
+  padding: 94px 0;
+}
+.product__list {
   @extend %justify-content;
 }
 
-.worklist-item {
+.product__item {
   position: relative;
   justify-content: space-between;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.worklist-item img {
-  width: 100%;
-  height: auto;
-  display: block;
+.product__item {
+  .product__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
-.worklist-wrapper {
+.product__wrapper {
   position: absolute;
   @extend %align-center;
   bottom: 0;
@@ -23,7 +31,7 @@
   justify-content: center;
 }
 
-.desc {
+.product__text {
   @extend %align-center;
   font-size: 14px;
   line-height: 1.142;

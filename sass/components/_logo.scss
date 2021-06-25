@@ -1,29 +1,17 @@
 .logo {
   color: $logo-color;
-  font-family: $accent-color;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  @extend %logo;
 }
 
-.web-logo {
+.logo__studio_accent_color {
   color: $accent-color;
 }
 
-.footer-logo {
-  color: $white-color;
-  font-family: $accent-color;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+.logo__studio_dark_color {
+  @extend %logo;
+  color: $accent-color;
 }
 
-.footer-logo > .link {
+.footer__logo--end {
   margin-bottom: 20px;
-}
-
-.footer-logo .web-logo {
-  color: $accent-color;
 }

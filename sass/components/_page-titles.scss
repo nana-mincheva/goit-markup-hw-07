@@ -9,7 +9,9 @@
   margin-bottom: 30px;
 }
 
-.studio-title {
+.product__title,
+.team__title,
+.clients__title {
   color: $title-color;
   text-align: center;
   font-weight: 700;
@@ -19,17 +21,17 @@
   margin-bottom: 50px;
 }
 
-.filter-title {
+.filter__title {
   color: $title-color;
-  font-weight: b700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.feature-title {
+.feature-list__title {
   color: $title-color;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -37,11 +39,24 @@
   margin-bottom: 10px;
 }
 
-.name-title {
+.team__name {
   color: $title-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+
+.footer-icon__title {
+  color: $white-color;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portfolio__title {
+  display: none;
 }

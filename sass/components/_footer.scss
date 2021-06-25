@@ -1,9 +1,10 @@
-.addres {
+.footer__adress {
   font-style: normal;
   margin-bottom: 9px;
 }
 
-.footer a:visited {
+.footer-contacts__item:visited,
+.footer__logo--end:visited {
   color: $white-color;
 }
 
@@ -12,38 +13,46 @@
   background-color: $background-color;
   padding-top: 69px;
   padding-bottom: 60px;
-}
-
-.footer-contacts li {
-  &:not(:last-child) {
-    margin-bottom: 9px;
+  .container {
+    display: flex;
+    align-items: baseline;
   }
 }
 
-.footer-contacts .link {
+.footer-contacts {
+  .footer-contacts__link {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-contacts__item {
   color: $white-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
-  color: $accent-color;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer-modal {
   margin-left: 93px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    @extend %align-center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-.footer-modal-title {
+.footer-modal__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
@@ -52,15 +61,8 @@
   color: $white-color;
   margin-bottom: 20px;
 }
-.footer-modal-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  @extend %align-center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-modal-input {
+.footer-modal__input {
   background-color: $background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -70,16 +72,15 @@
   height: 50px;
   outline: none;
   padding-left: 16px;
-
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-modal-input:hover,
-.footer-modal-input:focus {
+.footer-modal__input:hover,
+.footer-modal__input:focus {
   border-color: $accent-color;
 }
 
-.footer-modal-btn {
+.footer-modal__button {
   display: inline-block;
   color: $white-color;
   background-color: $accent-color;
@@ -98,14 +99,16 @@
   margin-left: 12px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #188ce8;
+  }
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
-.footer-modal-btn:hover,
-.footer-modal-btn:focus {
-  background-color: #188ce8;
-}
-
-.footer-modal-icon {
+.footer-modal__icon {
   fill: $white-color;
   display: inline-block;
   vertical-align: middle;
