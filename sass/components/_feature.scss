@@ -6,8 +6,7 @@
 }
 
 .feature .container {
-  display: flex;
-  justify-content: center;
+  @extend %justify-content;
 }
 
 .feature-list {

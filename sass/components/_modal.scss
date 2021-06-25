@@ -192,29 +192,15 @@
 }
 
 .modal-btn {
-  display: inline-block;
-  color: $white-color;
-  background-color: $accent-color;
+  @extend %button;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  align-items: center;
-  text-align: center;
-  align-self: center;
-  letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
   padding: 10px 56px;
   margin-bottom: 40px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color:$modal-btn-color;
+  background-color: $modal-btn-color;
 }
 
 .modal {
@@ -238,8 +224,7 @@
 }
 
 .modal-content {
-  display: flex;
-  justify-content: center;
+  @extend %justify-content;
   position: absolute;
   top: 50%;
   left: 50%;

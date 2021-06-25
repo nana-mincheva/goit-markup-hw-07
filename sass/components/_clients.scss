@@ -4,8 +4,7 @@
 }
 
 .clients-list {
-  display: flex;
-  justify-content: center;
+  @extend %justify-content;
 }
 
 .clients-card {
@@ -21,9 +20,8 @@
 }
 
 .clients-card-item {
-  display: flex;
+  @extend %align-center;
   justify-content: center;
-  align-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
