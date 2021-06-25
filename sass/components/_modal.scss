@@ -45,13 +45,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-button:hover,
-.close-button:focus {
-  fill: $accent-color;
+  &:hover {
+    fill: $accent-color;
+  }
+  &focus {
+    fill: $accent-color;
+  }
 }
 
 .modal-form-title {
@@ -156,17 +156,19 @@
   border-color: $accent-color;
 }
 
-.modal-form-check-field::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid $title-color;
-  border-radius: 2px;
-  border-color: $title-color;
-  display: inline-block;
-  vertical-align: middle;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-form-check-field {
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-color;
+    border-radius: 2px;
+    border-color: $title-color;
+    display: inline-block;
+    vertical-align: middle;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal-form-check-field {
@@ -196,64 +198,10 @@
   font-weight: bold;
   padding: 10px 56px;
   margin-bottom: 40px;
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: $modal-btn-color;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.modal-content {
-  @extend %justify-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 520px;
-  width: 100%;
-  max-height: 581px;
-  height: 100%;
-  background-color: $white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px;
-}
-
-.close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 6px 6px 0 6px;
-  background-color: $white-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-button:hover,
-.close-button:focus {
-  fill: $accent-color;
+  &:hover {
+    background-color: $modal-btn-color;
+  }
+  &:focus {
+    background-color: $modal-btn-color;
+  }
 }
