@@ -5,10 +5,10 @@
   }
 }
 
-.feature-list {
+.feature__list {
   display: flex;
   flex-direction: row;
-  .feature-list__text {
+  .feature__text {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
@@ -24,7 +24,7 @@
   }
 }
 
-.feature__item-icon-antenna {
+.feature__icon--antenna {
   &:before {
     display: block;
     content: "";
@@ -36,7 +36,7 @@
   }
 }
 
-.feature__item-icon-clock {
+.feature__icon--clock {
   &:before {
     display: block;
     content: "";
@@ -48,7 +48,7 @@
   }
 }
 
-.feature__item-icon-diagram {
+.feature__icon--diagram {
   &:before {
     display: block;
     content: "";
@@ -60,7 +60,7 @@
   }
 }
 
-.feature__item-icon-astronaut {
+.feature__icon--astronaut {
   &:before {
     display: block;
     content: "";

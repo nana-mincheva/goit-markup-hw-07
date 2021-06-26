@@ -1,7 +1,6 @@
 .contacts {
-  @extend %align-center;
   margin-left: auto;
-  .contacts-item {
+  .contacts__item {
     &:not(:last-child) {
       margin-right: 50px;
     }
@@ -22,7 +21,7 @@
   }
 }
 
-.contacts__mail {
+.contacts-item__mail {
   @extend %contacts-style;
   width: 16px;
   height: 12px;
@@ -31,7 +30,7 @@
   }
 }
 
-.contacts__tel {
+.contacts-item__tel {
   @extend %contacts-style;
   width: 10px;
   height: 16px;

@@ -9,7 +9,7 @@
   justify-content: space-between;
   flex-flow: row wrap;
 }
-.team-profile__text {
+.team__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -28,7 +28,7 @@
   }
 }
 
-.team-profile {
+.team-box {
   padding: 30px 32px;
 }
 .team__image {

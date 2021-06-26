@@ -1,13 +1,8 @@
-.nav-list {
-  @extend %align-center;
-}
-
-.site-nav {
-  @extend %align-center;
+.site-nav__list {
   margin-left: 93px;
 }
 
-.site-nav {
+.site-nav__list {
   .site-nav__item {
     &:not(:last-child) {
       margin-right: 50px;
